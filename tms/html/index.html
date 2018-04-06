@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS - 사원관리시스템</title>
+  <!-- css파일 링크 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+  <link rel="stylesheet" href="../css/design.css">
+  <!-- js파일 링크 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- 로그인페이지 -->
+  <header>
+    <h2 id="index-h2"><img alt="logo" src="../images/SSS2.png">사원관리시스템</h2>
+  </header>
+
+  <section>
+    <div class="container">
+      <form>
+        <div class="index-form">
+          <label for="exampleInputEmail1">사원번호</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="사원번호를 입력하세요">
+        </div>
+        <div class="index-button">
+          <label for="exampleInputPassword1">비밀번호</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+        </div>
+      <button type="button" class="btn btn-primary" id="index-login">로그인</button>
+      <button type="button" class="btn btn-default" id="index-password" data-toggle="modal" data-target="#myModal">비밀번호찾기</button>
+      </form>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">비밀번호찾기</h4>
+          </div>
+          <div class="modal-body">
+            사원번호입력
+            <input type="text">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+            <button type="button" class="btn btn-primary">비밀번호찾기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#index-login').click(function(){
+        location.href='list.html';
+      })
+    </script>
+  </section>
+  <footer>
+    <small>copyright©CheckPong. All rights reserved.</small>
+  </footer>
+</body>
+</html>
