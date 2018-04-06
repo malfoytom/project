@@ -42,82 +42,86 @@
     </nav>
   </header>
   <section>
-    <div class="list-search">
-      사원검색
-      <input type="text">
-      <button type="button">검색</button>
+    <div class="container">
+      <div class="col-sm-12">
+      <div class="list-search">
+        사원검색
+        <input type="text">
+        <button type="button">검색</button>
+      </div>
+      <div class="list-container">
+        <table class="table table-striped" id="list-table">
+          <thead id="list-thead">
+            <tr>
+              <th>#</th>
+              <th>사원번호</th>
+              <th>사원명</th>
+              <th>부서명</th>
+              <th>입사날짜</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            <tr>
+              <th scope="row">2</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            <tr>
+              <th scope="row">3</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            <tr>
+              <th scope="row">4</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            <tr>
+              <th scope="row">5</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            <tr>
+              <th scope="row">6</th>
+              <td>1001</td>
+              <td><a href="detail.html">조리퐁</a></td>
+              <td>개발부</td>
+              <td>2018-04-05</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <nav id="list-nav">
+        <ul class="pagination">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="list-container">
-      <table class="table table-striped" id="list-table">
-        <thead id="list-thead">
-          <tr>
-            <th>#</th>
-            <th>사원번호</th>
-            <th>사원명</th>
-            <th>부서명</th>
-            <th>입사날짜</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          <tr>
-            <th scope="row">2</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          <tr>
-            <th scope="row">3</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          <tr>
-            <th scope="row">4</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          <tr>
-            <th scope="row">5</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          <tr>
-            <th scope="row">6</th>
-            <td>1001</td>
-            <td><a href="detail.html">조리퐁</a></td>
-            <td>개발부</td>
-            <td>2018-04-05</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <nav id="list-nav">
-      <ul class="pagination">
-        <li>
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  </div>
   </section>
   <footer>
     <small>copyright©CheckPong. All rights reserved.</small>
